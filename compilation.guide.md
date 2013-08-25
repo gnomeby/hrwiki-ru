@@ -11,4 +11,11 @@ HRWiki compilation guide
 * [Install Semantic MediaWiki](http://www.mediawiki.org/wiki/Extension:Semantic_MediaWiki)
 * [Install Semantic forms](http://www.mediawiki.org/wiki/Extension:Semantic_Forms)
 * [Install Semantic Forms Inputs](http://www.mediawiki.org/wiki/Extension:Semantic_Forms_Inputs)
-* [Instal IM Status](http://www.mediawiki.org/wiki/Extension:IM_Status)
+
+Install other extensions:
+* [IM Status](http://www.mediawiki.org/wiki/Extension:IM_Status)
+* [IMStatus](http://www.mediawiki.org/wiki/Extension:IM_Status)
+* [CreateBox](http://www.mediawiki.org/wiki/Extension:CreateBox)
+* [NewestPages](http://www.mediawiki.org/wiki/Extension:NewestPages)
+* [MultiUpload](http://www.mediawiki.org/wiki/Extension:MultiUpload)
+* [WikiCategoryTagCloud](http://www.mediawiki.org/wiki/Extension:WikiCategoryTagCloud)

@@ -141,3 +141,31 @@ require_once( "$IP/extensions/WikiEditor/WikiEditor.php" );
 # End of automatically generated settings.
 # Add more configuration options below.
 
+# Short URL
+$wgArticlePath 	    = "/wiki/$1";
+
+# SemanticMediaWiki
+require_once( "$IP/extensions/Validator/Validator.php" );
+include_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
+enableSemantics('hrwiki.lo');
+
+# SemanticForms
+include_once("$IP/extensions/SemanticForms/SemanticForms.php");
+
+# SemanticFormsInputs
+require_once("$IP/extensions/SemanticFormsInputs/SemanticFormsInputs.php");
+
+# IM Status
+require_once( "{$IP}/extensions/IMStatus/IMStatus.php" );
+
+# CreateBox
+require_once("{$IP}/extensions/CreateBox/CreateBox.php");
+
+# NewestPages
+require_once ("$IP/extensions/NewestPages/NewestPages.php");
+
+# MultiUpload
+require_once("$IP/extensions/MultiUpload/MultiUpload.php");
+
+# WikiCategoryTagCloud
+require_once("$IP/extensions/WikiCategoryTagCloud/WikiCategoryTagCloud.php");
