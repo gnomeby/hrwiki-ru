@@ -97,11 +97,11 @@ $wgShellLocale = "be_BY.utf8";
 # Site language code, should be one of the list in ./languages/Names.php
 $wgLanguageCode = "en";
 
-$wgSecretKey = "9de6e215a095def73d963901425d571796b77b19da2e6fd20d1be1f0eb0aae3d";
+$wgSecretKey = "d1cbf5ee3655366026c2250bb3c1585d6862ceb5be2d3aa76db812cda4532042";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "9498e09666092671";
+$wgUpgradeKey = "2ddae1bfdeba55e7";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'standard', 'nostalgia', 'cologneblue', 'monobook', 'vector':
