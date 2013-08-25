@@ -19,3 +19,15 @@ Install other extensions:
 * [NewestPages](http://www.mediawiki.org/wiki/Extension:NewestPages)
 * [MultiUpload](http://www.mediawiki.org/wiki/Extension:MultiUpload)
 * [WikiCategoryTagCloud](http://www.mediawiki.org/wiki/Extension:WikiCategoryTagCloud)
+* [CategoryTree](http://www.mediawiki.org/wiki/Extension:CategoryTree)
+* [FileIndexer](http://www.mediawiki.org/wiki/Extension:FileIndexer)
+
+Configure properties, templates, forms.
+Add default search by files.
+
+TODO:
+* Autocomplete for specialization
+* Edit with WYSWYG
+* Edit with form
+* Edit sidebar
+* Installation instructions

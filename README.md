@@ -9,6 +9,7 @@ Features:
 * Indexing attached files (Microsoft Office files, Open Office files, PDF)
 * Writing comments
 * Remote access
+* Autocomplete for specialization
 
 *Support*
 * [Leave a ticket](https://github.com/gnomeby/hrwiki/issues/new)
@@ -32,9 +33,10 @@ Features:
 * MariaDB 5.1+ or MySQL 5.0.2 or higher
 * imagemagick
 * SMTP client for sending emails (exim, ssmtp)
-
-* antiword
-* catdoc
+* FileIndexer system tools
+* * antiword
+* * catdoc
+* * pdftotext
 
 #### Installation:
 

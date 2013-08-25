@@ -169,3 +169,47 @@ require_once("$IP/extensions/MultiUpload/MultiUpload.php");
 
 # WikiCategoryTagCloud
 require_once("$IP/extensions/WikiCategoryTagCloud/WikiCategoryTagCloud.php");
+
+# CategoryTree
+$wgUseAjax = true;
+require_once( "$IP/extensions/CategoryTree/CategoryTree.php" );
+
+# FileIndexer
+$wgFileExtensions[] = 'doc';
+$wgFileExtensions[] = 'xls';
+$wgFileExtensions[] = 'pdf';
+$wgFileExtensions[] = 'docx';
+$wgFileExtensions[] = 'odt';
+$wgFileExtensions[] = 'ods';
+$wgFileExtensions[] = 'odp';
+$wgFileExtensions[] = 'odg';
+$wgFileExtensions[] = 'odt';
+$wgFileExtensions[] = 'xlsx';
+$wgFileExtensions[] = 'xlsm';
+$wgFileExtensions[] = 'pptx';
+$wgFileExtensions[] = 'txt';
+$wgFileExtensions[] = 'rtf';
+require_once( "extensions/FileIndexer/FileIndexer.php" );
+
+#Set default searching
+$wgNamespacesToBeSearchedDefault = array(
+        NS_MAIN =>           true,
+        NS_TALK =>           false,
+        NS_USER =>           false,
+        NS_USER_TALK =>      false,
+        NS_PROJECT =>      false,
+        NS_PROJECT_TALK => false,
+        NS_IMAGE =>          false,
+        NS_IMAGE_TALK =>     false,
+        NS_FILE =>      true,
+        NS_HRWIKI =>      true,
+        NS_HRWIKI_TALK => false,
+        NS_MEDIAWIKI =>      false,
+        NS_MEDIAWIKI_TALK => false,
+        NS_TEMPLATE =>       false,
+        NS_TEMPLATE_TALK =>  false,
+        NS_HELP =>           false,
+        NS_HELP_TALK =>      false,
+        NS_CATEGORY =>       false,
+        NS_CATEGORY_TALK =>  false
+);
