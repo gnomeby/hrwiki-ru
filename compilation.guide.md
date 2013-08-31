@@ -25,9 +25,11 @@ Install other extensions:
 Configure properties, templates, forms.
 Add default search by files.
 
-TODO:
-* Autocomplete for specialization
-* Edit with WYSWYG
-* Edit with form
-* Edit sidebar
-* Installation instructions
+Configure edit with tab:
+http://www.mediawiki.org/wiki/Extension:Semantic_Forms/The_%22edit_with_form%22_tab
+
+Autocomplete for Specialization:
+http://www.mediawiki.org/wiki/Extension:Semantic_Forms/Defining_forms
+
+Edit sidebar:
+http://www.mediawiki.org/wiki/Manual:Interface/Sidebar/ru

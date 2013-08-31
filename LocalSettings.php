@@ -136,6 +136,15 @@ require_once( "$IP/extensions/ParserFunctions/ParserFunctions.php" );
 require_once( "$IP/extensions/Renameuser/Renameuser.php" );
 require_once( "$IP/extensions/Vector/Vector.php" );
 require_once( "$IP/extensions/WikiEditor/WikiEditor.php" );
+# Enables use of WikiEditor by default but still allow users to disable it in preferences
+$wgDefaultUserOptions['usebetatoolbar'] = 1;
+$wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
+ 
+# Displays the Preview and Changes tabs
+$wgDefaultUserOptions['wikieditor-preview'] = 1;
+ 
+# Displays the Publish and Cancel buttons on the top right side
+#$wgDefaultUserOptions['wikieditor-publish'] = 1;
 
 
 # End of automatically generated settings.
@@ -151,6 +160,7 @@ enableSemantics('hrwiki.lo');
 
 # SemanticForms
 include_once("$IP/extensions/SemanticForms/SemanticForms.php");
+$sfgRenameEditTabs = true;
 
 # SemanticFormsInputs
 require_once("$IP/extensions/SemanticFormsInputs/SemanticFormsInputs.php");
