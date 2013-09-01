@@ -39,6 +39,31 @@ Features:
 * * pdftotext
 
 #### Installation:
+* Read *Requirements* and install all software
+* Download HRWiki tool [sources](https://github.com/gnomeby/hrwiki/archive/master.zip)
+* * Extract it as a new apache VirtualHost site
+* * Restore MySQL dump from the file *maintenance/dumps/05_hrwiki_configure_semantic.sql*
+* * Open *extensions/FileIndexer/FileIndexer_cfg.php* and check $wgFiCommandPaths section, make sucre that yout have such tool with those paths
+* * Open *LocalSettings.php* and cnage the following properties:
+* * $wgServer
+* * $wgEmergencyContact
+* * $wgPasswordSender
+* * $wgDBserver, $wgDBname, $wgDBuser, $wgDBpassword
+* * $wgImageMagickConvertCommand, $wgShellLocale, $wgDiff3
+* * Set owner for HRWiki tool folder to apache user 
+* Configure apache VirtualHost
+* * Use apache.hrwiki.example.conf as example
+
+#### Usage:
+* Open Main page
+* Login using the following Admin / password1
+* Change password
+* Read tutorial
+
+#### Security configuration:
+HRWiki may contain import confedential information about candidates. To protect it make the following:
+* Configure access to DB [using SSL](http://httpd.apache.org/docs/2.2/ssl/)
+* Protect all pages using [Basic authorization](http://httpd.apache.org/docs/2.2/howto/auth.html)
 
 #### Authors:
 * [Yauhen Artsiukhou](https://github.com/jsirex)
