@@ -43,8 +43,8 @@ Features:
 * Download HRWiki tool [sources](https://github.com/gnomeby/hrwiki/archive/master.zip)
 * * Extract it as a new apache VirtualHost site
 * * Restore MySQL dump from the file *maintenance/dumps/05_hrwiki_configure_semantic.sql*
-* * Open *extensions/FileIndexer/FileIndexer_cfg.php* and check $wgFiCommandPaths section, make sucre that yout have such tool with those paths
-* * Open *LocalSettings.php* and cnage the following properties:
+* * Open *extensions/FileIndexer/FileIndexer_cfg.php* and check $wgFiCommandPaths section, make sure that yout have such tools with those paths
+* * Open *LocalSettings.php* and change the following properties:
 * * $wgServer
 * * $wgEmergencyContact
 * * $wgPasswordSender
