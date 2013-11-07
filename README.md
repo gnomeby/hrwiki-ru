@@ -1,5 +1,6 @@
 HRWiki
 ======
+([Русская версия](https://github.com/gnomeby/hrwiki-ru))
 
 HRWiki - Encyclopedia for managing CVs and related information about candidates
 
