@@ -1,5 +1,6 @@
 HRWiki
 ======
+([English version](https://github.com/gnomeby/hrwiki))
 
 HRWiki - база данных для ведения соискателей и их резюме, и другой связанной с этим информацией
 
