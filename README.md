@@ -1,23 +1,23 @@
 HRWiki
 ======
 
-HRWiki - Encyclopedia for managing CVs and related information about candidates
+HRWiki - база данных для ведения соискателей и их резюме, и другой связанной с этим информацией
 
-Features:
+Возможности:
 
-* Forms for entering information about candidates
-* Indexing attached files (Microsoft Office files, Open Office files, PDF)
-* Writing comments
-* Remote access
-* Autocomplete for specialization
+* Ввод информации о кандидатах
+* Поиск по прикреплённым файлам
+* Оставление комментариев, отзывов
+* Удалённый доступ
+* Автозаполнение для специализаций
 
-*Support*
-* [Leave a ticket](https://github.com/gnomeby/hrwiki/issues/new)
-* or [Write an email](mailto:hrwiki-support@holey.org)
+*Поддержка*
+* [Оставьте заявку](https://github.com/gnomeby/hrwiki-ru/issues/new)
+* или [Напишите нам](mailto:hrwiki-support@holey.org)
 
 ![gnomeby avatar](http://niakhaichyk.org/andrey/img/lisa_small_32.png)
 
-#### Requirements:
+#### Требования:
 * Apache 2.2
 * * mod_rewrite
 * * SSL
@@ -32,39 +32,39 @@ Features:
 * * mod_php for apache
 * MariaDB 5.1+ or MySQL 5.0.2 or higher
 * imagemagick
-* SMTP client for sending emails (exim, ssmtp)
+* SMTP client для отправки писем (exim, ssmtp)
 * FileIndexer system tools
 * * antiword
 * * catdoc
 * * pdftotext
 
-#### Installation:
-* Read *Requirements* and install all software
-* Download HRWiki tool [sources](https://github.com/gnomeby/hrwiki/archive/master.zip)
-* * Extract it as a new apache VirtualHost site
-* * Restore MySQL dump from the file *maintenance/dumps/05_hrwiki_configure_semantic.sql*
-* * Open *extensions/FileIndexer/FileIndexer_cfg.php* and check $wgFiCommandPaths section, make sucre that yout have such tool with those paths
-* * Open *LocalSettings.php* and cnage the following properties:
+#### Установка:
+* Прочитайте *Требования* и установите всё
+* Скачайте [утилиту](https://github.com/gnomeby/hrwiki-ru/archive/master.zip)
+* * Распакуйте это туда, где обычно у вас хранятся источники файлов для apache VirtualHost
+* * Восстановите дамп базы данных из файла *maintenance/dumps/06_hrwiki_russian_language.sql*
+* * Откройте *extensions/FileIndexer/FileIndexer_cfg.php* и проверьте секцию $wgFiCommandPaths, убедитесь, что у вас есть эти файлы по указанным путям
+* * Откройте *LocalSettings.php* и измените следующие настройки:
 * * $wgServer
 * * $wgEmergencyContact
 * * $wgPasswordSender
 * * $wgDBserver, $wgDBname, $wgDBuser, $wgDBpassword
 * * $wgImageMagickConvertCommand, $wgShellLocale, $wgDiff3
-* * Set owner for HRWiki tool folder to apache user 
-* Configure apache VirtualHost
-* * Use apache.hrwiki.example.conf as example
+* * Установите владельца папки с утилитой пользователя apache
+* Настройте VirtualHost для apache
+* * Используйте в качестве примера apache.hrwiki.example.conf
 
-#### Usage:
-* Open Main page
-* Login using the following Admin / password1
-* Change password
-* Read tutorial
+#### Использование:
+* Откройте главную страницу
+* Представьтесь системе: Admin / password1
+* Изменить пароль
+* Прочтите руководство
 
-#### Security configuration:
-HRWiki may contain import confedential information about candidates. To protect it make the following:
-* Configure access to DB [using SSL](http://httpd.apache.org/docs/2.2/ssl/)
-* Protect all pages using [Basic authorization](http://httpd.apache.org/docs/2.2/howto/auth.html)
+#### Настройки безопасности:
+Утилита в процессе её эксплуатации будет пополняться конфиденциальной информацией о кандидатах. Для большей защиты этой информации:
+* Настройте доступ к утилите по [HTTPS](http://httpd.apache.org/docs/2.2/ssl/)
+* Защттите все страницы [базовой авторизацией](http://httpd.apache.org/docs/2.2/howto/auth.html)
 
-#### Authors:
-* [Yauhen Artsiukhou](https://github.com/jsirex)
-* [Andrey Niakhaichyk](https://github.com/gnomeby)
+#### Авторы:
+* [Евгений Артюхов](https://github.com/jsirex)
+* [Андрей Нехайчик](https://github.com/gnomeby)

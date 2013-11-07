@@ -95,7 +95,7 @@ $wgShellLocale = "be_BY.utf8";
 #$wgCacheDirectory = "$IP/cache";
 
 # Site language code, should be one of the list in ./languages/Names.php
-$wgLanguageCode = "en";
+$wgLanguageCode = "ru";
 
 $wgSecretKey = "d1cbf5ee3655366026c2250bb3c1585d6862ceb5be2d3aa76db812cda4532042";
 
