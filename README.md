@@ -14,9 +14,6 @@ HRWiki - база данных для ведения соискателей и �
 
 *Поддержка*
 * [Оставьте заявку](https://github.com/gnomeby/hrwiki-ru/issues/new)
-* или [Напишите нам](mailto:hrwiki-support@holey.org)
-
-![gnomeby avatar](http://niakhaichyk.org/andrey/img/lisa_small_32.png)
 
 #### Требования:
 * Apache 2.2
